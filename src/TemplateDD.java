@@ -6,7 +6,6 @@ import java.util.Scanner;
  */
 public class TemplateDD
 {
-	private static boolean ARRAY = false;
 
 	private static String[][] inArray;
 	private static ArrayList<ArrayList<String>> inList;
@@ -26,11 +25,8 @@ public class TemplateDD
 			}
 			line++;
 		}
-		if(ARRAY){
-			inArray = (String[][])tempInList.toArray();
-		} else {
-			inList = tempInList;
-		}
+		inArray = (String[][])tempInList.toArray();
+		inList = tempInList;
 	}
 	private static void doProblem(){
 		//Start problem here
